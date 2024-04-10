@@ -26,11 +26,6 @@ namespace Silly.Mods
             GorillaLocomotion.Player.Instance.maxJumpSpeed = 9f;
             GorillaLocomotion.Player.Instance.jumpMultiplier = 9f;
         }
-        public static void OPSpeedboost()
-        {
-            GorillaLocomotion.Player.Instance.maxJumpSpeed = 18f;
-            GorillaLocomotion.Player.Instance.jumpMultiplier = 18f;
-        }
         public static void SizeChanger()
         {
             if (ControllerInputPoller.instance.rightGrab)

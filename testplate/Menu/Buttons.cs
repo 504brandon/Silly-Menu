@@ -15,7 +15,6 @@ namespace Silly.Menu
 
             new ButtonInfo[] { // Movement Mods
                 new ButtonInfo { buttonText = "Return to Main", method =() => Global.ReturnHome(), isTogglable = false, toolTip = "Opens the main settings page for the menu."},
-                new ButtonInfo { buttonText = "OP Speedboost", method =() => Movement.Speedboost(), toolTip = "Gives you a better speedboost!"},
                 new ButtonInfo { buttonText = "Platforms", method =() => Movement.Platforms(), toolTip = "Use Right Grab and Left Grab."},
                 new ButtonInfo { buttonText = "Size Changer", method =() => Movement.SizeChanger(), toolTip = "Size up with Right Grab and go back to normal with Left Grab."},
                 new ButtonInfo { buttonText = "Speedboost", method =() => Movement.Speedboost(), toolTip = "Gives you a speedboost!"},
