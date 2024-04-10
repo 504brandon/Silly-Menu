@@ -96,7 +96,7 @@ namespace Silly.Mods
         }
         public static void cuckshack() 
         {
-            GorillaTagger.Instance.
+            LeftPlat.transform.rotation = GorillaTagger.Instance.leftHandTransform.transform.rotation;
         }
     }
 }
