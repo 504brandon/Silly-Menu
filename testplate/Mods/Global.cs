@@ -12,5 +12,9 @@ namespace Silly.Mods
         {
             buttonsType = 1;
         }
+        public static void EnterSafety()
+        {
+            buttonsType = 2;
+        }
     }
 }
