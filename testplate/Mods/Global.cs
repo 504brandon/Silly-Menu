@@ -1,0 +1,16 @@
+﻿using static Silly.Menu.Main;
+
+namespace Silly.Mods
+{
+    internal class Global
+    {
+        public static void ReturnHome()
+        {
+            buttonsType = 0;
+        }
+        public static void MovementMods()
+        {
+            buttonsType = 1;
+        }
+    }
+}
