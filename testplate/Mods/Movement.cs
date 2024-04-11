@@ -89,5 +89,17 @@ namespace Silly.Mods
                 }
             }
         }
+        public static void GhostMonkey()
+        {
+            if (ControllerInputPoller.instance.rightGrab)
+            {
+                GorillaTagger.Instance.offlineVRRig.headBodyOffset = new Vector3(999f, 999f, 999f);
+            }
+            
+            if (ControllerInputPoller.instance.leftGrab)
+            {
+                GorillaTagger.Instance.offlineVRRig.headBodyOffset = Vector3.zero;
+            }
+        }
     }
 }
