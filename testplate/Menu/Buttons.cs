@@ -17,7 +17,7 @@ namespace Silly.Menu
             new ButtonInfo[] { // Movement Mods
                 new ButtonInfo { buttonText = "Return to Main", method =() => Global.ReturnHome(), isTogglable = false, toolTip = "Opens the main settings page for the menu."},
                 new ButtonInfo { buttonText = "Ghost Monkey", method =() => Movement.GhostMonkey(), toolTip = "Use Right Grab to go invisible and use Left Grab to go back to normal."},
-                new ButtonInfo { buttonText = "Platforms", method =() => Movement.Platforms(), toolTip = "Use Right Grab and Left Grab."},
+                new ButtonInfo { buttonText = "Platforms", method =() => Movement.Platforms(), toolTip = "Platform monke."},
                 new ButtonInfo { buttonText = "Size Changer", method =() => Movement.SizeChanger(), toolTip = "Size up with Right Grab and go back to normal with Left Grab."},
                 new ButtonInfo { buttonText = "Speedboost", method =() => Movement.Speedboost(), toolTip = "Gives you a speedboost!"},
             },
@@ -45,6 +45,7 @@ namespace Silly.Menu
 
             new ButtonInfo[] { // Movement Settings
                 new ButtonInfo { buttonText = "Return to Settings", method =() => SettingsMods.EnterSettings(), isTogglable = false, toolTip = "Returns to the main settings page for the menu."},
+                new ButtonInfo { buttonText = "Trigger Platforms", toolTip = "Triggers or grips."},
             },
 
             new ButtonInfo[] { // Projectile Settings

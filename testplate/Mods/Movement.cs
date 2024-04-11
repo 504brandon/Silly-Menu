@@ -45,7 +45,14 @@ namespace Silly.Mods
 
         public static void Platforms()
         {
-            if (ControllerInputPoller.instance.rightGrab)
+            bool[] controls = { };
+
+            if (GetIndex("Trigger Platforms").enabled)
+                controls = new bool[] { ControllerInputPoller.instance.leftControllerIndexFloat > 0.1f, ControllerInputPoller.instance.rightControllerIndexFloat > 0.1f };
+            else
+                controls = new bool[] { ControllerInputPoller.instance.leftGrab, ControllerInputPoller.instance.rightGrab };
+
+            if (controls[0])
             {
                 if (RightPlat == null) 
                 {
@@ -67,7 +74,7 @@ namespace Silly.Mods
                 }
             }
 
-            if (ControllerInputPoller.instance.leftGrab)
+            if (controls[1])
             {
                 if (LeftPlat == null) 
                 {
