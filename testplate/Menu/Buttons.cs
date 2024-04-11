@@ -52,7 +52,7 @@ namespace Silly.Menu
             },
 
             new ButtonInfo[] { // cum shack
-                new ButtonInfo { buttonText = "Disconnect", isTogglable = false, toolTip = "Disconnects you from the lobby."},
+                new ButtonInfo { buttonText = "Disconnect", method =() => Global.Disconnect(), isTogglable = false, toolTip = "Disconnects you from the lobby."},
             },
         };
     }
